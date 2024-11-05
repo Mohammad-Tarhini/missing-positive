@@ -10,6 +10,5 @@ def first_missing_positive(numbers):
     while m in numbers:
         m+=1
     return m
-        
 
 
