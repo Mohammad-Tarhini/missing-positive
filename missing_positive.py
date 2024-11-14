@@ -7,8 +7,11 @@ def first_missing_positive(numbers):
             m=numbers[i]
     if m-1>0: #check if there  positive number small then min
        return m-1
-    while m in numbers:
-        m+=1
-    return m
+    while True:
+        if m in numbers:
+            m+=1
+        else:
+             return m
 
+   
 
